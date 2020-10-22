@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 [RequireComponent(typeof(Rigidbody))]
 
-public class BallControll : MonoBehaviour
+public class BallControl : MonoBehaviour
 {
   public float m_ThrowForce = 100f; //Gooikracht
 
@@ -68,11 +68,10 @@ public class BallControll : MonoBehaviour
           (
           ARCam.transform.forward * m_ThrowForce / duration +
           ARCam.transform.up * direction.y * m_ThrowDirectionY +
-          ARCam.transform.right * direction.x * m_throwDirectionX
+          ARCam.transform.right * direction.x * m_ThrowDirectionX
           );
 
           startTime = 0.0f;
-          endTime = 0.0f;
           duration = 0.0f;
           startPosition = new Vector3(0, 0, 0);
           direction = new Vector3(0, 0, 0);
@@ -92,7 +91,7 @@ public class BallControll : MonoBehaviour
         rb.angularVelocity = Vector3.zero;
         endTime = 0.0f;
 
-        Vector3 ballPos = ARCam.transform.position + ARCam.transform.forward * m_ballCameraOffset.z + ARCam.transform.up * m_BallCameraOffset.y;
+        Vector3 ballPos = ARCam.transform.position + ARCam.transform.forward * m_ballCameraOffset.z + ARCam.transform.up * m_ballCameraOffset.y;
         transform.position = ballPos;
       }
 }
