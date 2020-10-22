@@ -25,7 +25,7 @@ public class PlaceHoop : MonoBehaviour
     /// </summary>
     public GameObject spawnedHoop { get; private set; }
 
-    
+
         [SerializeField]
         [Tooltip("Start bal in AR camera")]
         GameObject m_BallPrefab;
@@ -82,7 +82,7 @@ public class PlaceHoop : MonoBehaviour
                     isPlaced = true;
 
                     spawnedBall = Instantiate(m_BallPrefab);
-                    spawnedBall.transform.parent = m_RaycastManager.parent.Find("AR Camera").gameObject;
+                    spawnedBall.transform.parent = m_RaycastManager.transform.Find("AR Camera").gameObject.transform;
 
                     if (onPlacedObject != null)
                     {
