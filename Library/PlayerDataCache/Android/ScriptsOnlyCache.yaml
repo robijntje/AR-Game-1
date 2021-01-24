@@ -41,8 +41,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
-    com.unity.multiplayer-hlapi.Runtime.dll:
-    - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
     Assets/ARFreeThrow/ARFreeThrow.unity:
     - Class: 1
@@ -1077,4 +1075,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/ARFreeThrow/ARFreeThrow.unity
-  playerPath: C:/Users/Robin/Downloads/arfoundation-samples-7f33eca8720ce7ee8e52fc6494810e2a15c93929/Build1.apk
+  playerPath: C:/Programmeren/AR1/AR-Game-1/Build2.apk
