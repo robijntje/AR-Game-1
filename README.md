@@ -2,7 +2,7 @@
 Dit is een basketball game die werkt door middel van AR op Android telefoons.
 
 ## Installatie
-De app is gemaakt in [UnityEngine](https://godotengine.org/) 2019.4.11. Na het klonen van de GIT kun je de app openen via de Unity Hub.
+De app is gemaakt in [UnityEngine](https://unity.com/) 2019.4.11. Na het klonen van de GIT kun je de app openen via de Unity Hub.
 
 ### Android
 Als de app is geexporteerd naar Android dan kan de APK worden geïnstalleerd door de applicatie te side loaden. Dit leg ik hieronder verder uit.
